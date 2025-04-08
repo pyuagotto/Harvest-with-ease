@@ -1,0 +1,37 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "[1.21.62]Harvest with ease",
+        "description": "",
+        "uuid": "f0b25752-6574-15e7-aa47-b06636394fd8",
+        "version": [
+            0,
+            1,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            20,
+            40
+        ]
+    },
+    "modules": [
+        {
+            "description": "GameTest module",
+            "type": "script",
+            "uuid": "5b306a5f-1073-2dbc-8823-8ec59fecf3e1",
+            "version": [
+                0,
+                1,
+                0
+            ],
+            "entry": "scripts/index.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.17.0"
+        }
+    ]
+}
