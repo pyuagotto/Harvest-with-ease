@@ -96,6 +96,13 @@ world.beforeEvents.playerInteractWithBlock.subscribe((ev)=>{
                 //amountは1以上
                 const amount = getDropAmount(MinecraftItemTypes.Potato, level);
                 harvest = new ItemStack(MinecraftItemTypes.Potato, amount);
+
+                const probability = Math.floor(Math.random() * 100);
+
+                if(probability <= 2){
+                    seed = new ItemStack(MinecraftItemTypes.PoisonousPotato);
+                }
+                
                 break;
             }
 
